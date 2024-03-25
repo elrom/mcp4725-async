@@ -1,5 +1,11 @@
 # mcp4725-async
+
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/ThatRedox/mcp4725-async/rust.yml?style=for-the-badge)
+![Codecov (with branch)](https://img.shields.io/codecov/c/gh/ThatRedox/mcp4725-async/main?token=IQMTQKNQ2X&style=for-the-badge)
+
 An async driver for the MCP4725 DAC using `embedded_hal_async`. It supports sending commands over I2C.
+
+Warning: This is currently untested on real hardware.
 
 The driver can be initialized by calling `new` with an I2C interface and the chip address:
 ```rust
