@@ -16,7 +16,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Build
+        run: cargo build --verbose --all-features
+        env:
+          RUSTFLAGS: '-C instrument-coverage -C codegen-units=1 -C inline-threshold=0 -Coverflow-checks=off'
+
       - name: Run tests
-        run: cargo test --verbose --all-features
+        run: cargo test --verbose
         env:
           RUSTFLAGS: '-C instrument-coverage -C codegen-units=1 -C inline-threshold=0 -Coverflow-checks=off'

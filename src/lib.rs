@@ -7,9 +7,6 @@ mod tests;
 
 pub use types::*;
 
-#[cfg(feature = "defmt-03")]
-use defmt_03 as defmt;
-
 use embedded_hal_async::i2c::{I2c, SevenBitAddress};
 
 /// The MCP4725 device

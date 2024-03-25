@@ -1,3 +1,6 @@
+#[cfg(feature = "defmt-03")]
+use defmt_03 as defmt;
+
 #[derive(Copy, Clone, Debug, Eq, PartialEq)]
 #[cfg_attr(feature = "defmt-03", derive(defmt::Format))]
 #[repr(u8)]
