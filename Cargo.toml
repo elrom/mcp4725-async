@@ -1,7 +1,7 @@
 [package]
 name = "mcp4725-async"
 description = "An async driver for the MCP4725 DAC"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["ThatRedox"]
 edition = "2021"
 readme = "README.md"
